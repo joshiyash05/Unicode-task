@@ -1,0 +1,47 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>First page</title>
+<link rel="stylesheet" type="text/css" href="{% static 'static/style.css' %}">
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+{% block content %}
+<body>
+<h1>Hello {{context.name}} and i am {{context.age}} years old!!</h1>
+{% if user.is_authenticated %}
+<h2>Hello {{user.username}}</h2>
+{% else %}
+<h2> Hello Guest</h2>
+{% endif %}
+<div>
+	{% for feature in features %}
+	<h1>{{feature.id}}
+	<h1>i am {{feature.name}}</h1>
+	<h2>{{feature.details}}</h2>
+	
+	{% endfor %}
+</div>
+</form>
+{% if user.is_authenticated %}
+<button class="button"><a href="logout" class="button">LOGOUT</a></button>
+{% else %}
+<button class="button"><a href="login" class="button">LOGIN or SIGNUP</a></button>
+{% endif %}
+{% endblock %}
+</body>
+</html>

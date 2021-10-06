@@ -1,0 +1,31 @@
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+	<style>
+		h2 {
+			color: yellow;
+		}
+	</style>
+<title>Login page</title>
+
+</head>
+{% block content %}
+<body>
+<h1>Login Page</h1>
+{% for message in messages %}
+<h2> {{message}}</h2>
+{% endfor %}
+<form method = "POST" action="login">
+	{% csrf_token %}
+	<h2>Username</h2>
+	<input type="text" name="username"/>
+	<h2>Password</h2>
+	<input type="password" name="password"/>
+	<input type="submit" name="submit"/>	
+</form>
+{% endblock %}
+</body>
+</html>
