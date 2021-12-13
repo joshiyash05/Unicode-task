@@ -1,0 +1,226 @@
+*{
+
+    margin: 0;
+    padding:0;
+    
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+nav{
+        width:100%; height: 10vh;
+        background-color: #388087;
+        color:#F6F6F2;
+        display: flex; 
+        justify-content: space-between; 
+        align-items:center;
+        margin-left:3px;
+        position: fixed;
+}
+.menu{
+    width: 25%;
+    display:flex; justify-content: space-around;
+}
+
+nav .menu a
+{
+    width: 25%;
+    font-size: 15px ;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F6F6F2;
+    padding-right: 15px;
+}
+.button:hover{
+    background:black;
+    color:aqua;
+
+}
+main{
+
+    background-color: #F6F6F2;
+    width: 100%;
+    height: 85vh;
+    font-size: 40px;
+    color: #286FB4;
+    display: flex;
+    padding-top: 10%;
+    left: 5%;
+    padding-left: 25px;
+       
+}
+.logo1{
+    width: 100px;
+  }
+.change_content:after{
+    content: '';
+    animation:changetext 10s infinite linear;
+    color:#286FB4;
+    
+}
+@keyframes changetext{
+    0%{ content:"Programmer";}
+    10%{ content:"Web developer";}
+    20%{ content:"Software Engineer";}
+    30%{ content:"Singer";}
+    40%{ content:"Writer";}
+    50%{ content:"Traveller";}
+    60%{ content:"Astronaut";}
+    70%{ content:"Backend Developer";}
+    80%{ content:"Lecturer";}
+    90%{ content:"Motivational Speaker";}
+    100%{ content:"Gamer";}
+    
+}
+.image{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    height: 400px;
+
+    object-fit: cover;
+}
+.aboutme{
+    background-color: #FBEEC1;
+    width: 100%;
+    height: 70vh;
+    color: #286FB4;
+    padding-left: 25px;
+    padding-top: 10%;
+  
+}
+.heading{
+    background-color: #FBEEC1;
+    color: #286FB4;
+     display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.skills{
+    margin: 0;
+    padding: 25px;
+    background-color:gray ;
+}
+.expertise {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 0 2px 20px 0 rgba(122, 122, 122, 0.5);
+  padding: 10px;
+}
+h2{
+    text-align: center;
+}
+
+.js {
+  background:conic-gradient(green 95%, #fff 0);
+   float: left;
+  margin-right: 23px;
+}
+.python {
+  background:conic-gradient(red 84%, #fff 0);
+   float: left;
+  margin-right: 23px;
+
+}
+.django{
+    background:conic-gradient(aqua 70%, #fff 0);
+     float: left;
+  margin-right: 23px;
+}
+.cppc{
+    background:conic-gradient(blue 75%, #fff 0);
+     float: left;
+  margin-right: 23px;
+}
+.java{
+    background: conic-gradient(maroon  60%, #fff 0);
+     float: left;
+  margin-right: 23px;
+
+}
+.cell{
+    float: left;
+  margin-right: 3px;
+}
+.achieve{
+     background-color: #FBEEC1;
+    width: 100%;
+    height: 70vh;
+    color: #286FB4;
+    padding-left: 40px;
+    padding-top: 10%;
+}
+ol{list-style: upper-roman;
+   }
+.ol{
+    font-size: 25px;
+}
+ol .a{list-style: square;
+    font-size: 20px;}
+.h1,h4{
+    
+    color:#F6F6F2;
+
+        justify-content: space-between;
+        text-align: center; 
+        align-items:center;
+}
+.contactme{
+background:rgb(30,30,40);
+}
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid blue; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.center{
+  background-color:black ;
+  color: aliceblue;
+  text-align: center;
+}
